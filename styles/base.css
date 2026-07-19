@@ -1,0 +1,78 @@
+/* Fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+#course-title {
+  display: block; /* Para centrar fácilmente */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #555;
+  border-radius: 5px;
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  background: white;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 300px;      /* todas las imágenes tendrán el mismo ancho */
+  height: auto;      /* mantiene la proporción original */
+  margin-bottom: 10px;
+  display: block;    /* asegura que se comporte como bloque */
+  margin-left: auto; /* centra horizontalmente */
+  margin-right: auto;
+  border-radius: 8px; /* opcional: esquinas redondeadas */
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #eee;
+  margin-top: 20px;
+}
