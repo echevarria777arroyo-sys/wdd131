@@ -1,0 +1,88 @@
+/* temples.css - Mobile View */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #000;
+}
+
+header {
+    background-color: purple;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+#menuButton {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0.5rem auto;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: .75rem;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,.2);
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h2 {
+    text-align: center;
+}
+
+figure {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 350px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: .5rem;
+    font-size: .95rem;
+}
+
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
