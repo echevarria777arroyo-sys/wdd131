@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Sun -->
+  <g>
+    <circle cx="45" cy="45" r="20" fill="#FDB813"></circle>
+    <g stroke="#FDB813" stroke-width="4" stroke-linecap="round">
+      <line x1="45" y1="10" x2="45" y2="20"></line>
+      <line x1="45" y1="70" x2="45" y2="80"></line>
+      <line x1="10" y1="45" x2="20" y2="45"></line>
+      <line x1="70" y1="45" x2="80" y2="45"></line>
+      <line x1="20" y1="20" x2="27" y2="27"></line>
+      <line x1="63" y1="63" x2="70" y2="70"></line>
+      <line x1="20" y1="70" x2="27" y2="63"></line>
+      <line x1="63" y1="27" x2="70" y2="20"></line>
+    </g>
+  </g>
+
+  <!-- Cloud -->
+  <g>
+    <path d="M40 85
+             C40 73 50 65 62 65
+             C66 54 77 48 88 50
+             C99 52 107 61 108 72
+             C117 72 124 79 124 88
+             C124 98 116 106 106 106
+             H48
+             C36 106 28 98 28 88
+             C28 80 33 73 40 72
+             Z" fill="#E5E7EB" stroke="#9CA3AF" stroke-width="3"></path>
+  </g>
+</svg>

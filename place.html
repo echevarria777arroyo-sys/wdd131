@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peru</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Peru</h1>
+</header>
+
+<main>
+
+    <picture>
+        <source media="(min-width: 800px)" srcset="images/peru-large.webp">
+        <img src="images/peru-small.webp" alt="View of Peru">
+    </picture>
+
+    <section class="data">
+        <h2>Data</h2>
+
+        <p><strong>Area:</strong> 1,285,216 km²</p>
+        <p><strong>Population:</strong> 34,352,719</p>
+        <p><strong>Capital:</strong> Lima</p>
+        <p><strong>Languages:</strong> Spanish, Quechua, Aymara</p>
+        <p><strong>Currency:</strong> Sol (PEN)</p>
+        <p><strong>Time Zone:</strong> UTC-5</p>
+        <p><strong>Calling Code:</strong> +51</p>
+        <p><strong>Internet TLD:</strong> .pe</p>
+    </section>
+
+    <section class="weather">
+        <h2>Weather</h2>
+
+        <img src="images/weather.svg" alt="Weather icon">
+
+        <p><strong>Temperature:</strong> <span id="temperature">10</span> °C</p>
+        <p><strong>Wind:</strong> <span id="windSpeed">5</span> km/h</p>
+        <p><strong>Wind Chill:</strong> <span id="windChill"></span> °C</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> Melissa Echevarria</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+:root {
+    --primary: #c8102e;
+    --secondary: #ffffff;
+    --accent: #f2f2f2;
+    --text: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: white;
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+picture img {
+    width: 100%;
+    display: block;
+}
+
+section {
+    background: var(--accent);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.weather img {
+    width: 70px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
