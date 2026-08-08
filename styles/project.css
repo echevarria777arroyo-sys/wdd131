@@ -1,0 +1,259 @@
+:root {
+    --dark-blue: #003f73;
+    --blue: #005a9c;
+    --light-blue: #eaf3f8;
+    --white: #ffffff;
+    --dark-gray: #333333;
+    --light-gray: #f4f4f4;
+}
+
+/* =========================
+   GENERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0 0 1rem 0;
+    font-size: 1.8rem;
+}
+
+/* =========================
+   MENU BUTTON
+   ========================= */
+
+#menuButton {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--white);
+    color: var(--dark-blue);
+    border: none;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* =========================
+   NAVIGATION - MOBILE
+   ========================= */
+
+#mainNav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+/* ESTE ES EL QUE HACE FUNCIONAR LAS 3 LINEAS */
+
+#mainNav.open {
+    display: flex;
+}
+
+#mainNav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.3rem 0.5rem;
+}
+
+#mainNav a:hover,
+#mainNav a:focus {
+    text-decoration: underline;
+}
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* =========================
+   HERO
+   ========================= */
+
+.hero {
+    background-color: var(--white);
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero h2 {
+    color: var(--dark-blue);
+    margin-bottom: 1.5rem;
+}
+
+.hero img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 1rem auto;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 1rem auto;
+}
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.button {
+    display: inline-block;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 0.75rem 1.2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    min-width: 180px;
+    text-align: center;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--blue);
+}
+
+/* =========================
+   INTRO
+   ========================= */
+
+.intro {
+    padding: 2rem;
+}
+
+.intro h2 {
+    color: var(--dark-blue);
+}
+
+/* =========================
+   CARDS
+   ========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.cards article {
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.cards h3 {
+    color: var(--dark-blue);
+}
+
+/* =========================
+   RESOURCES / SUPPORT CARDS
+   ========================= */
+
+.intro .cards article {
+    min-height: 150px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0 0 0.5rem 0;
+}
+
+footer a {
+    color: var(--white);
+}
+
+/* =========================
+   LARGER SCREEN
+   ========================= */
+
+@media (min-width: 768px) {
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    /* En computadora no necesitamos las 3 líneas */
+
+    #menuButton {
+        display: none;
+    }
+
+    #mainNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .hero {
+        padding: 4rem 3rem;
+    }
+
+    .hero h2 {
+        font-size: 1.6rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
